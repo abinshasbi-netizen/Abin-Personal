@@ -117,44 +117,55 @@
 
 
 <div class="col-lg-7">
- <form id="contact-form"
-      action="https://formsubmit.co/abinshasbi@gmail.com"
-      method="POST"
-      data-aos="fade-up"
-      data-aos-delay="200">
+<form id="contact-form"
+        action="https://formsubmit.co/abinshasbi@gmail.com"
+        method="POST"
+        class="php-email-form"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        novalidate>
+    <div class="row gy-4">
 
-  <div class="row gy-4">
+      <div class="col-md-6">
+        <label for="name-field" class="pb-2">Your Name</label>
+        <input type="text" name="name" id="name-field" class="form-control" required>
+      </div>
 
-    <div class="col-md-6">
-      <label for="name-field" class="pb-2">Your Name</label>
-      <input type="text" name="name" id="name-field" class="form-control" required>
+      <div class="col-md-6">
+        <label for="email-field" class="pb-2">Your Email</label>
+        <input type="email" class="form-control" name="email" id="email-field" required>
+      </div>
+
+      <div class="col-md-12">
+        <label for="subject-field" class="pb-2">Subject</label>
+        <input type="text" class="form-control" name="subject" id="subject-field" required>
+      </div>
+
+      <div class="col-md-12">
+        <label for="message-field" class="pb-2">Message</label>
+        <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
+      </div>
+
+      <!-- Hidden FormSubmit / helper fields -->
+      <!-- Optional: set a redirect after success (uncomment and change if needed) -->
+      <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+      <!-- Add _captcha false if you want to disable FormSubmit's captcha (may affect spam protection) -->
+      <!-- <input type="hidden" name="_captcha" value="false"> -->
+
+      <!-- Hidden field containing the uploaded image file path (developer requested) -->
+      <input type="hidden" name="image_url" value="/mnt/data/A_photograph_captures_two_silhouetted_practitioner.png">
+
+      <div class="col-md-12 text-center">
+        <div class="loading">Loading</div>
+        <div class="error-message"></div>
+        <div class="sent-message">Your message has been sent. Thank you!</div>
+
+        <button type="submit">Send Message</button>
+      </div>
+
     </div>
-
-    <div class="col-md-6">
-      <label for="email-field" class="pb-2">Your Email</label>
-      <input type="email" class="form-control" name="email" id="email-field" required>
-    </div>
-
-    <div class="col-md-12">
-      <label for="subject-field" class="pb-2">Subject</label>
-      <input type="text" class="form-control" name="subject" id="subject-field" required>
-    </div>
-
-    <div class="col-md-12">
-      <label for="message-field" class="pb-2">Message</label>
-      <textarea class="form-control" name="message" rows="10" id="message-field" required></textarea>
-    </div>
-
-    <!-- Optional FormSubmit controls -->
-    <!-- <input type="hidden" name="_next" value="https://your-domain.com/thank-you.html"> -->
-    <!-- <input type="hidden" name="_captcha" value="false"> -->
-
-    <div class="col-md-12 text-center">
-      <button type="submit">Send Message</button>
-    </div>
-
-  </div>
-</form>
+  </form>
 
 </div>
 
