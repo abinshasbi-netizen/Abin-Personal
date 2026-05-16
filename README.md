@@ -44,7 +44,7 @@ Abin-Personal/
 ![Portfolio](assets/images/screenshots/portfolio-section.png)
 
 ### Contact Page
-![Contact](assets/images/screenshots/contact-page.png)
+![Contact](assets/images/screenshots/contact-section.png)
 
 
 ## Future Improvements
